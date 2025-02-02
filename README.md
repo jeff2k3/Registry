@@ -64,8 +64,10 @@ class Color {
         self::register('green', new self('Green', '#00FF00'));
     }
 }
-$red = Color::RED();
-echo $red->getName(); // Red
+$red = Color::RED(); // Access the 'red' object from the registry
+echo $red->getName(); // Outputs: Red
+echo $red->getHex();  // Outputs: #FF0000
 
-$green = Color::GREEN()->getHex();
-echo $green; // #00FF00
+$green = Color::GREEN(); // Access the 'green' object from the registry
+echo $green->getName(); // Outputs: Green
+echo $green->getHex();  // Outputs: #00FF00
