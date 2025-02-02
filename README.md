@@ -60,8 +60,8 @@ class Color {
 
     // Initialize the registry with default entries
     protected static function setup() : void {
-        self::register('red', new self('Red', '#FF0000'));
-        self::register('green', new self('Green', '#00FF00'));
+        self::_registryRegister('red', new self('Red', '#FF0000'));
+        self::_registryRegister('green', new self('Green', '#00FF00'));
     }
 }
 $red = Color::RED(); // Access the 'red' object from the registry
