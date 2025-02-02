@@ -38,7 +38,7 @@ Returns all registered members in the registry.
 ## How to Use
 
 ### 1. **Create a class that uses the `RegistryTrait`**:
-   The class should implement the `initializeRegistry()` method, where the default objects will be registered. Additionally, use the `@method` annotation to indicate the static access methods for the registered members.
+   The class should implement the `setup()` method, where the default objects will be registered. Additionally, use the `@method` annotation to indicate the static access methods for the registered members.
 
 ```php
 /**
